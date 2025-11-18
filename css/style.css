@@ -15,23 +15,25 @@ section{
     margin: 80px 0;
     padding: 80px 0;
 }
-.navbar .nav-item{
-    position: relative;
-     
-   }
+html{
+    scroll-padding: 74px;
+    scroll-behavior: smooth;
+}
    .navbar .nav-item{
     margin-left: 10px;
    }
    .navbar .nav-item .nav-link{
 text-transform: capitalize;
+
    }
    .navbar .nav-item{
     width: fit-content;
    }
-html{
-    scroll-padding: 74px;
-    scroll-behavior: smooth;
-}
+     .navbar .nav-item .nav-link.active{
+        color: var(--main-color);
+        
+     }
+
  .dropdown-menu{
    min-width:50rem;
     padding: 40px;
