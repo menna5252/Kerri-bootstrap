@@ -29,7 +29,7 @@ text-transform: capitalize;
    .navbar .nav-item{
     width: fit-content;
    }
-     .navbar .nav-item .nav-link.active{
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
         color: var(--main-color);
         
      }
