@@ -97,6 +97,7 @@ text-transform: capitalize;
     background-attachment: fixed;
     position: relative;
     margin-bottom: 20px;
+    z-index: 20;
  }
 .setting{
     border-top-right-radius: 10px;
@@ -109,8 +110,8 @@ p{
     font-size: 1rem;
 }
 
-.max-w-100{
-    max-width: 700px;
+.max-w-500{
+    max-width: 500px;
 }
 /***************animation home1**************/
 .scroll{
@@ -299,21 +300,30 @@ background-clip: text;
 .heading{
     margin-bottom: 10px;
 }
-.heading h2{
-    position: relative;
-}
+
 .heading h2::after{
-    background-color: #E65F78;
+    background-image: linear-gradient(to right,#E65F78,transparent);
     width:50px;
     height: 3px;
     content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-block;
+    
+    
 }
+.heading h2::before{
+     background-image: linear-gradient(to left,#E65F78,transparent);
+    width:50px;
+    height: 3px;
+    content: '';
+    display: inline-block;
+    
+    
+}
+
 #services,#testimonial,.bg{
     background-color: #F5F5F5;
+    position: relative;
+    
 }
 #services .services-card{
     transition: all 0.4s;
@@ -429,6 +439,7 @@ footer{
     transition: 0.4s;
     cursor: pointer;
 }
+
 .fa-angle-up{
     width: 30px;
     height: 30px;
@@ -437,11 +448,14 @@ footer{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+   
+
 }
 .up-btn{
     position: fixed;
     right: 1rem;
     bottom: 1rem;
+     z-index: 10;
 }
 
 .accordion-item:first-of-type  ,.accordion-item:not(:first-of-type)
@@ -467,5 +481,5 @@ footer{
   border-radius: 20px;
 }
 
-
+   
 
