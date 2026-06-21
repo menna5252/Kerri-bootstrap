@@ -389,6 +389,12 @@ opacity: 0;
     color: #000;
 }
 
+
+/***************blog**********************/
+#blog{
+    overflow: hidden;
+}
+
 .back-layer{
     background-color: rgba(216, 87, 111,0.3);
     transform: rotate(3deg);
@@ -457,6 +463,7 @@ footer{
     bottom: 1rem;
      z-index: 10;
 }
+
 
 .accordion-item:first-of-type  ,.accordion-item:not(:first-of-type)
  {
